@@ -1,0 +1,204 @@
+/* Réinitialisation des styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles généraux */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    margin:0;
+    padding:0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Styles spécifiques */
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h1, h2, h3 {
+    margin-bottom: 10px;
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+a {
+    color: #333;
+}
+
+footer {
+    background-color: #f4f4f4;
+    padding: 10px;
+    text-align: center;
+}
+
+.news-section{
+    background-color:#f4f4f4;
+    padding:40px;
+}
+
+.news-grid{
+    display: grid;
+    grid-template-rows:
+    repeat(auto-fit, minmax(300px,1fr));
+    grid-columns:20px;
+}
+
+.news-item img {
+    width:100%;
+    height:auto;
+    margin-bottom:10px;
+}
+
+.news-item h3{
+    margin-bottom:10px;
+    font-size:18px
+    
+}
+
+.news-item p{
+    margin-bottom:10px;
+    color:#777;
+}
+.news-item a{
+    color:#333;
+}
+.news-item{
+    width: calc(33.33% - 20px);
+    margin-bottom: 30px;
+    padding:20px;
+    background-color:#fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.new-item:hover{
+    transform: translateY(-5px);
+}
+
+.blog-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.blog-post {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+
+.post-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.post-date,
+.post-author {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.post-content {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.read-more {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  background-color: #555;
+}
+
+#miam{
+    background-image:url("rer.jpg");
+    background-size:100%;
+    display:block;
+    width:200px;
+    height:100px;
+
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+}
+
+
+/* Styles pour les écrans de petite taille */
+
+@media only screen and (max-width: 600px) {
+  /* Masquer les éléments non essentiels */
+  .sidebar {
+    display: none;
+  }
+
+  /* Ajuster les styles pour les petits écrans */
+  .title {
+    font-size: 24px;
+  }
+
+  .post-title {
+    font-size: 20px;
+  }
+
+  .post-date,
+  .post-author {
+    font-size: 14px;
+  }
+
+  .post-content {
+    font-size: 16px;
+  }
+}
+
